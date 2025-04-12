@@ -29,8 +29,10 @@
         <div class="flex-1-0-100 text-center">Credits</div>
     </v-footer>
   </v-app>
-</template>
 
+
+  
+</template>
 
 <!-- auslagern! -->
 <script setup>
