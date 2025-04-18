@@ -1,7 +1,8 @@
 <template>
   <v-app>
     
-    <v-app-bar color="primary" :elevation="0" class="w-64">
+   
+    <v-app-bar color="primary" :elevation="0" class="px-16">
       <v-app-bar-title>Lett's Sing</v-app-bar-title>
         <template v-slot:append>
           <v-btn 
@@ -13,6 +14,9 @@
           ></v-btn>
         </template>
     </v-app-bar>
+
+  
+
 
     <v-main>
       <NuxtPage />
@@ -30,8 +34,6 @@
     </v-footer>
   </v-app>
 
-
-  
 </template>
 
 <!-- auslagern! -->
