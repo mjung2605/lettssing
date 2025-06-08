@@ -1,5 +1,5 @@
 <template>
     <v-container>
-        Platzhalter für Blogartikel.
+        Kontakt.
     </v-container>
 </template>

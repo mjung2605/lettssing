@@ -1,5 +1,5 @@
 <template>
     <v-container>
-        Archiv.
+        Förderung.
     </v-container>
 </template>
