@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Katja Volkmann",
+        "role": "Beisitzerin"
+    },
+    {
+        "id": 2,
+        "name": "Hilde Jungilligens",
+        "role": "Beisitzerin"
+    },
+    {
+        "id": 3,
+        "name": "Mone Steiner",
+        "role": "1. Vorsitzende"
+    },
+    {
+        "id": 4,
+        "name": "Steffi Leveling",
+        "role": "Kassiererin"
+    },
+    {
+        "id": 5,
+        "name": "Gaby Berenskötter",
+        "role": "Schriftführerin"
+    },
+    {
+        "id": 6,
+        "name": "Moni Surmann",
+        "role": "2. Vorsitzende"
+    },
+    {
+        "id": 7,
+        "name": "Kristina Leveling",
+        "role": "Beisitzerin"
+    }
+]
