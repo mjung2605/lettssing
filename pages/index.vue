@@ -8,7 +8,7 @@
         </v-carousel>
 
         
-        <v-container class="d-flex pl-0 pr-0 pb-16 pt-16">
+        <v-container class="d-flex ga-4 pl-0 pr-0 pb-16 pt-16">
             <!-- responsiveness fixen/adden - flex -->
             <v-img height="600px" width="400px"
                 src="/images/fmttm-konzert.jpg"></v-img>
