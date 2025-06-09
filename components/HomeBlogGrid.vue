@@ -8,7 +8,7 @@
                     cols="12"
                     sm="4">
                         <v-sheet class="d-flex flex-column ga-4 justify-center">
-                            <v-img cover src="/vorstand.jpeg" aspect-ratio="1/1"></v-img>
+                            <v-img cover src="/images/vorstand.jpeg" aspect-ratio="1/1"></v-img>
                             <h2>{{ post.title }}</h2>
                             <p> {{ post.text.length > 120 ? post.text.slice(0, 120) + "..." : post.text }} </p>
                             <v-btn variant="tonal" class="pa-2">mehr lesen</v-btn>

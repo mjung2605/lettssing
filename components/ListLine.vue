@@ -1,6 +1,6 @@
 <template>
     <v-container class="d-flex ga-8 pl-0 pr-0">
-            <v-img src="/vorstand.jpeg" width="400px" max-width="400px"/>
+            <v-img src="/images/vorstand.jpeg" width="400px" max-width="400px"/>
             
                 
             <v-container class="pa-0">

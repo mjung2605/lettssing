@@ -1,6 +1,6 @@
 <template>
     <v-container class="d-flex ga-8 pl-0 pr-0">
-            <v-img src="/vorstand.jpeg" width="300px" max-width="300px"/>
+            <v-img src="/images/vorstand.jpeg" width="300px" max-width="300px"/>
             <p> Von links nach rechts:
                 <ul>
                     

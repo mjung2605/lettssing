@@ -1,17 +1,17 @@
 <template>
         <v-carousel hide-delimiters show-arrows="hover" cycle>
-            <v-carousel-item src="/ls-1.jpeg" cover />
-            <v-carousel-item src="/ls-2.jpeg" cover />
-            <v-carousel-item src="/ls-3.jpeg" cover />
-            <v-carousel-item src="/ls-4.jpeg" cover />
-            <v-carousel-item src="/ls-5.jpeg" cover />
+            <v-carousel-item src="/images/ls-1.jpeg" cover />
+            <v-carousel-item src="/images/ls-2.jpeg" cover />
+            <v-carousel-item src="/images/ls-3.jpeg" cover />
+            <v-carousel-item src="/images/ls-4.jpeg" cover />
+            <v-carousel-item src="/images/ls-5.jpeg" cover />
         </v-carousel>
 
         
         <v-container class="d-flex pl-0 pr-0 pb-16 pt-16">
             <!-- responsiveness fixen/adden - flex -->
             <v-img height="600px" width="400px"
-                src="/fmttm-konzert.jpg"></v-img>
+                src="/images/fmttm-konzert.jpg"></v-img>
             <v-container class="d-flex flex-column ga-8">
                 <h1>
                     27. und 28.09.2025: Konzert - Fly me to the Moon
