@@ -22,9 +22,6 @@
             </v-container>
         </v-container>
         
-        
         <HomeBlogColumn />
-        
-
         
 </template>
