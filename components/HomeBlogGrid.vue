@@ -24,10 +24,5 @@
 </template>
 
 <script setup>
-    const { data, error } = await useFetch("/data/blog.json");
-
-    watchEffect(() => {
-  console.log("DATA:", data.value);
-  if (error.value) console.error("Fehler beim Laden:", error.value);
-});
+    const { data, error } = await useFetch("data/blog.json");
 </script>
