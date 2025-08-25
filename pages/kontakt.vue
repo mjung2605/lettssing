@@ -63,16 +63,14 @@
                                   href="/datenschutz"
                                   target="_blank"
                                   @click.stop
-                                >
-                                  Datenschutzerklärung
-                                </a>
-                                zu.
+                                >Datenschutzerklärung</a>
+                                 zu.
                               </div>
                             </template>
                         </v-checkbox>
                     </v-col>
                     <v-col class="d-flex justify-end">
-                        <v-btn  color="primary" type="submit">Absenden</v-btn>
+                        <v-btn color="primary" type="submit">Absenden</v-btn>
                     </v-col>
                 </v-row>
             </v-container>
@@ -129,3 +127,12 @@
         })
     }
 </script>
+
+<style>
+    a:visited {
+        color: #005e4b;
+    }
+    a{
+        color: #008066
+    }
+</style>
