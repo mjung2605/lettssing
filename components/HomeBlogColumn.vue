@@ -12,7 +12,7 @@
                             <v-container class="d-flex flex-column ga-4 align-start">
                                 <h2>{{ post.title }}</h2>
                                 <p> {{ post.text.length > 400 ? post.text.slice(0, 400) + "..." : post.text }} </p>
-                                <v-btn variant="tonal" class="pa-2">mehr lesen</v-btn>
+                                <v-btn variant="tonal"  class="pa-2">mehr lesen</v-btn>
                             </v-container>
                             
                         </v-sheet>

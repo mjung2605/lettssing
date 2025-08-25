@@ -12,6 +12,7 @@
   "dependencies": {
     "@mdi/font": "^7.4.47",
     "@nuxt/content": "^3.4.0",
+    "@nuxt/eslint": "^1.4.1",
     "@nuxt/fonts": "^0.11.1",
     "@nuxt/icon": "^1.12.0",
     "@nuxt/image": "^1.10.0",
