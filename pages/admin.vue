@@ -77,10 +77,11 @@
 
                             <!-- : (short for v-bind) ist nicht nur für dynamische werte, sondern auch, um vue zu sagen, dass es sich um einen
                                     JS-Ausdruck und nicht um einen String handelt!! -->
-                            <Button color="primary" text="Bearbeiten" :onClicking="openDialogDelete=true" />
-                            <Button color="error" text="Löschen" />
+                            <Button color="primary" text="Bearbeiten" @click="openEditDialog(post)" />
+                            <Button color="error" text="Löschen" @click="openDeleteDialog(post)" />
 
-                            <DialogDeletePost v-model="openDialogDelete" :post-title="post.title"/>
+
+                            
                         </v-container>
                         
                     </v-sheet>
@@ -88,8 +89,14 @@
                 </v-col>
             </v-row>
 
-            <!-- post-title anstatt postTitle: HTML Syntax (kebab case anstatt camel case) -->
-            <DialogDeletePost v-model="openDialogDelete" post-title="{{  }}"/>
+            <!-- dialog außerhalb der schleife, weil sonst pro post 1 dialog gerendert wird und wir für jeden dann 1 v-model brauchen... so nur eins insgesamt -->
+            <!-- vom child emittetes "confirm" event wird hier aufgefangen und post löschen getriggert-->
+            <DialogDeletePost v-model="isDeleteDialogOpen" :post="selectedPost" @confirm="deletePost(selectedPost.id)"/>
+
+            <!-- ggf später einfach ganzes objekt übergeben, um bilder zu ändern -->
+            <DialogUpdatePost v-model="isUpdateDialogOpen" :post="selectedPost" @confirm="updatePost(selectedPost.id)"/>
+
+            
 
 
         </v-container>
@@ -101,7 +108,6 @@
 
 
 <script setup>
-
 
     // upload logic
     const valid = ref(false)
@@ -132,10 +138,52 @@
     // fetch logic
     const { data: posts } = await useFetch('/api/posts');
 
+
+    // select post for update and delete:
+    const selectedPost = ref(null);
+
     // update logic
+    const isUpdateDialogOpen = ref(false);
+
+    function openEditDialog(post) {
+        selectedPost.value = { ...post };
+        isUpdateDialogOpen.value = true;
+    }    
+
+    async function editPost(id) {
+        // TODO
+    }
+
 
     // delete logic
-    const openDialogDelete = ref(false);
+
+    const isDeleteDialogOpen = ref(false);
+
+    function openDeleteDialog(post) {
+        console.log("Dialog öffnen für Post:", post);
+        selectedPost.value = post;
+        isDeleteDialogOpen.value = true;
+    }
+
+
+    async function deletePost(id) {
+
+        // 1 post muss selected sein
+        if(!id) return
+
+        // body: {id:id} muss nicht gesetzt werden, weil wir das schon über die params mitschicken 
+        try {
+            await $fetch(`/api/posts/${id}`, {
+                method: 'DELETE'
+            })
+            posts.value = posts.value.filter(post => post.id !== id) // optimistic update
+            selectedPost.value = null
+        }
+        catch(e) {
+            console.error('Fehler beim Löschen des Posts: ', e)
+
+        }
+    }
 
 
 
