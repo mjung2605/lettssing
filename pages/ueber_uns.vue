@@ -3,7 +3,7 @@
 
         <h1>Über uns</h1>
 
-        <p class="pt-4"> Hier steht ein kurzer Text über die Entstehungsgeschichte von Lett's Sing, inklusive der Namensherkunft.</p>
+        <p class="pt-8"> Hier steht ein kurzer Text über die Entstehungsgeschichte von Lett's Sing, inklusive der Namensherkunft.</p>
 
 
         <h2 class="pt-12">Chorleitung</h2>

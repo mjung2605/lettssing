@@ -1,5 +1,5 @@
 <template>
-    <v-container class="pt-16">
+    <v-container class="pt-16"> 
         <h1>Kontakt</h1>
         <p class="pt-8">Schreibe uns eine Nachricht!</p>
         <v-form class="pt-8" v-model="valid">
@@ -80,6 +80,8 @@
 </template>
 
 <script>
+
+    // changen to script setup
 
     export default {
         data: () => ({ 

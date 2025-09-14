@@ -14,7 +14,8 @@
         <v-container class="d-flex ga-4 pl-0 pr-0 pb-16 pt-16">
             <!-- responsiveness fixen/adden - flex -->
             <v-img height="600px" width="400px"
-                src="/images/fmttm-konzert.jpg"></v-img>
+                src="/images/fmttm-konzert.jpg" />
+            
             <v-container class="d-flex flex-column ga-8">
                 <h1>
                     27. und 28.09.2025: Konzert - Fly me to the Moon
