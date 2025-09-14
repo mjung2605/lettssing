@@ -18,12 +18,17 @@ export default defineNuxtConfig({
   plugins: [
     '~/plugins/vuetify.ts'
   ],
+  runtimeConfig: {
+    public: {
+      SUPABASE_URL: process.env.SUPABASE_URL,
+      SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY      
+    }
+  },
   components: true,
   build: {
     transpile: ['vuetify'],
   },
   modules: [
-    '@nuxt/content',
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
