@@ -150,8 +150,24 @@
         isUpdateDialogOpen.value = true;
     }    
 
-    async function editPost(id) {
-        // TODO
+    async function updatePost(id) {
+        // 1 post muss selected sein
+        if(!id) return
+
+        // body: {id:id} muss nicht gesetzt werden, weil wir das schon über die params mitschicken 
+        try {
+            await $fetch(`/api/posts/${id}`, {
+                method: 'UPDATE'
+                // TODO: neue params über body mitgeben?
+            })
+            posts.value = posts.value.filter(post => post.id !== id) // optimistic update
+            selectedPost.value = null
+        }
+        catch(e) {
+            console.error('Fehler beim Löschen des Posts: ', e)
+
+        }
+        
     }
 
 
@@ -160,7 +176,6 @@
     const isDeleteDialogOpen = ref(false);
 
     function openDeleteDialog(post) {
-        console.log("Dialog öffnen für Post:", post);
         selectedPost.value = post;
         isDeleteDialogOpen.value = true;
     }

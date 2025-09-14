@@ -4,9 +4,9 @@
         <v-card class="p-8" max-width="500" :title="postTitle" text="Hier kannst du den Artikel nach Belieben bearbeiten.">
         
 
-            <v-form class="p-8"> <!-- AAAAAAAAAAAAAA -->
+            <v-form class="p-8"> <!-- TODO: fix// onchange? -->
                 <v-text-field label="Titel" :placeholder="postTitle" :v-model="newTitle" />
-                <v-text-field label="Beschreibung" :placeholder="postDesc" :v-model="newDesc" />
+                <v-text-field label="Beschreibung" :placeholder="postDesc" :v-model="newDesc"  />
 
             </v-form>
 
