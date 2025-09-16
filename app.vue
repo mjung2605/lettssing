@@ -1,16 +1,16 @@
-
-
 <template>
-  <v-app>
+    <v-app>
    
-    <NavBar />
+        <NavBar />
 
-    <v-main>
-      <NuxtPage />
-    </v-main> 
+        <v-main>
 
-    <Footer />
+            <NuxtPage />
+
+        </v-main> 
+
+        <Footer />
     
-  </v-app>
+    </v-app>
 
 </template>

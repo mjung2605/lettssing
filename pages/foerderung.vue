@@ -12,7 +12,7 @@
         <p class="pt-16">Herzlichen Dank für Eure Unterstützung – Ihr macht unseren Klang möglich!</p>
 
         <br><br><br><br><br><br>
-
+        <br><br><br><br><br><br>
 
 
     </v-container>

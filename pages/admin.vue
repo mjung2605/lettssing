@@ -77,7 +77,7 @@
 
                             <!-- : (short for v-bind) ist nicht nur für dynamische werte, sondern auch, um vue zu sagen, dass es sich um einen
                                     JS-Ausdruck und nicht um einen String handelt!! -->
-                            <Button color="primary" text="Bearbeiten" @click="openEditDialog(post)" />
+                            <Button text="Bearbeiten" @click="openEditDialog(post)" />
                             <Button color="error" text="Löschen" @click="openDeleteDialog(post)" />
 
 
