@@ -5,7 +5,7 @@
             :key="post.id"
             cols="12">
                 <v-sheet class="d-flex ga-4 justify-center ">
-                    <v-img cover src="/images/placeholder.png" aspect-ratio="1/1" width="400px"></v-img>
+                    <v-img cover :src="post.teaser_img" aspect-ratio="1/1" width="400px"></v-img>
                     <v-container class="d-flex flex-column ga-4 align-start">
                         <h2>{{ post.title }}</h2>
                         <p> {{ post.text.length > 400 ? post.text.slice(0, 400) + "..." : post.text }} </p>

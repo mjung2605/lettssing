@@ -5,7 +5,7 @@
             :href="href"
             @click="navigate"
             :variant=" isActive ? 'text' : 'plain'"
-            :color=" isActive ? 'secondary' : 'primary'"> 
+            :color=" isActive ? 'secondary' : 'primary'" class="font-weight-bold">
             {{ label }}
         </v-btn>
     </NuxtLink>

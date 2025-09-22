@@ -1,7 +1,7 @@
 <template>
     <v-container class="pt-16">
         <h1>Admin-Seite</h1>
-        <p>Hi! Das hier ist das "Kontrollzentrum" der Lett's Sing-Webseite. Hier kannst du neue Blog-Artikel erstellen oder alte Artikel aktualisieren oder löschen.</p>
+        <p class="pt-4">Hi! Das hier ist das "Kontrollzentrum" der Lett's Sing-Webseite. Hier kannst du neue Blog-Artikel erstellen oder alte Artikel aktualisieren oder löschen.</p>
  
 
 

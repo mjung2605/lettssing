@@ -1,7 +1,7 @@
 <template>
     <v-container class="pt-16">
         <h1>Förderung</h1>
-        <p class="pt-8">Unser Frauenchor lebt von Gemeinschaft, Freude an der Musik... und von Menschen, die uns unterstützen. Wenn Ihr unsere Arbeit wertschätzt und den Chor auf seinem musikalischen Weg begleiten möchtet, freuen wir uns sehr über Eure Hilfe.</p>
+        <p class="pt-8">Unser Frauenchor lebt von Gemeinschaft, Freude an der Musik... und von Menschen, die uns unterstützen. Wenn Ihr unsere Arbeit wertschätzt und den Chor auf seinem musikalischen Weg begleiten möchtet, freuen wir uns sehr über Eure Mithilfe.</p>
 
 
         <p class="pt-8"> - <b>Spenden:</b> Jede Zuwendung trägt dazu bei, Proben, Konzerte und Projekte möglich zu machen. Gerne stellen wir Euch eine Spendenbescheinigung aus.</p>

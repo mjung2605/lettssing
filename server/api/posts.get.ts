@@ -8,7 +8,7 @@ export default defineEventHandler(async () => {
 
 
     // extrahiert error von response, falls vorhanden, und data
-    const { data, error } = await supabase.from('posts').select('*');
+    const { data, error } = await supabase.from('posts').select('*').order("created_at", { ascending: false });
     if(error) {
         console.error('Das Getten hat in der Server Route nicht funktioniert: ', error);
     }
