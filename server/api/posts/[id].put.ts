@@ -8,7 +8,7 @@ export default defineEventHandler(async (e) => {
     const body = await readBody(e); // title, description, //// teaser_img, img
     const id = e.context.params?.id;
 
-    // extrahiert error von response, falls vorhanden, returnt sonst nichts
+    // extrahiert error von response, falls vorhanden, returnt sonst nichts NBOCH ADDEN. WHERE MIT ID
     const { error } = await supabase.from('posts').update({ title: body.title, text: body.description }); // , teaser_img: body.teaser_img, img: body.img
     if(error) {
         console.error('Das Ändern hat in der Server Route nicht funktioniert: ', error);
