@@ -2,7 +2,7 @@
     <v-container class="pt-16"> 
         <h1>Kontakt</h1>
         <p class="pt-8">Schreibe uns eine Nachricht!</p>
-        <v-form class="pt-8" v-model="valid">
+        <v-form class="pt-8" v-model="valid" @submit.prevent="onSubmit">
             <v-container class=" pr-0 pl-0">
                 <v-row>
                     <v-col cols="12" md="6">
@@ -75,59 +75,67 @@
                 </v-row>
             </v-container>
         </v-form>
+
+        <v-sheet v-if="success">
+            <p>Ihre Nachricht wurde erfolgreich versendet.</p>
+        </v-sheet>
         
     </v-container>
 </template>
 
-<script>
+<script setup>
 
-    // changen to script setup
 
-    export default {
-        data: () => ({ 
+    const valid = ref(false)
+    const firstname = ref('')
+    const lastname = ref('')
+    const email = ref('')
+    const tel = ref('')
+    const message = ref('')
+    const success = ref(null)
 
-            valid: false,
 
-            firstname: '', // empty string for value saving (separat von validation)
-            lastname: '',
-            email: '',
-            tel: '',
-            message: '',
-            checkbox: false,
+    // vue rules in form of array
+    const textRules = [
+        value => !!value || 'Bitte fülle dieses Feld aus.'
+    ]
 
-            // vuetify :rules erwartet Array mit Regeln
-            textRules: [
-                value => {
-                    if (value) return true;
-                    return 'Bitte füllen Sie dieses Feld aus.';
-                }
-            ],
-            emailRules: [
-                value => {
-                    if (value) return true;
-                    return 'Bitte füllen Sie dieses Feld aus.';
-                },
-                value => {
-                    if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) return true;
-                    return 'Bitte geben Sie eine gültige E-Mail-Adresse ein.'
-                }
-            ],
-            telRules: [
-                value => {
-                    if (!value) return true; // Feld ist freiwillig!!
-                    if (/(\(?([\d \-\)\–\+\/\(]+){6,}\)?([ .\-–\/]?)([\d]+))/.test(value)) return true;
-                    return 'Bitte geben Sie eine gültige Telefonnummer ein (freiwillig).'
-                }
-            ],
-            checkboxRules: [
-                value => {
-                    if(value) return true;
-                    return 'Bitte stimmen Sie der Datenschutzerklärung zu.'
-                }
-            ]
-            
-        })
+    const emailRules = [
+        value => !!value || 'Bitte fülle dieses Feld aus.',
+        value => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || 'Bitte gib eine gültige E-Mail-Adresse ein.'
+    ]       
+
+    const telRules = [
+        value => value === '' ||
+                /(\(?([\d \-\)\–\+\/\(]+){6,}\)?([ .\-–\/]?)([\d]+))/.test(value) ||
+                'Bitte gib eine gültige Telefonnummer ein (freiwillig).'
+    ]
+
+    function onSubmit() {
+        if(valid.value) sendEmail()
+        else console.log("E-Mail value nicht valid")
     }
+
+    async function sendEmail() {
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: `${firstname.value} ${lastname.value}`,
+                email: email.value,
+                tel: tel.value,
+                message: message.value
+            })
+        })
+
+        const result = await response.json()
+        console.log("email result:", result, result.success)
+        success.value = result.success
+
+    }
+
 </script>
 
 <style>
