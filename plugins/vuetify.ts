@@ -16,8 +16,8 @@ export default defineNuxtPlugin(nuxtApp => {
         mainTheme: {
           dark: false, 
           colors: {
-            primary: "#008066",
-            secondary: "#ff0080",
+            primary: "#006078",
+            secondary: "#e50051",
             error: "#db0771ff"
           }
         }

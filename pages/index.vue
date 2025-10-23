@@ -1,5 +1,5 @@
 <template>
-        <v-carousel hide-delimiters show-arrows="hover" cycle>
+        <v-carousel hide-delimiters show-arrows="hover" height="430" cycle>
             <v-carousel-item src="/images/ls-1.jpeg" cover />
             <v-carousel-item src="/images/ls-4.jpeg" cover />
             <v-carousel-item src="/images/ls-9.jpg" cover />
