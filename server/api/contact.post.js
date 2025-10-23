@@ -13,12 +13,12 @@ export default defineEventHandler(async (event) => {
   // nodemailer library als unser http client
   const transporter = nodemailer.createTransport({
 
-    host: config.mailHost,
-    port: config.mailPort,
+    host: config.MAIL_HOST,
+    port: config.MAIL_PORT,
     secure: false, // verwendet nicht ssl, sondern verschlüsselte Verbindung (STARTTLS)
     auth: {
-      user: config.mailUser,
-      pass: config.mailPasss
+      user: config.MAIL_USER,
+      pass: config.MAIL_PASS
     },
     tls: {
       rejectUnauthorized: false // optional, manchmal nötig bei IONOS
@@ -28,8 +28,8 @@ export default defineEventHandler(async (event) => {
 
   // Inhalt der Mail
     const mailOptions = {
-    from: process.env.MAIL_USER,
-    to: process.env.MAIL_USER,
+    from: config.MAIL_USER,
+    to: config.MAIL_USER,
     subject: `Neue Kontaktanfrage von ${body.name}`,
     text: `
       Nachricht: ${body.message}
@@ -47,7 +47,7 @@ export default defineEventHandler(async (event) => {
 
     return { success: true, messageId: info.messageId }
   } catch (error) {
-    console.error('Mail send error:', error)
+    console.error('Mail send error:', error, mailHost)
     return { success: false, error: error.message }
   }
 

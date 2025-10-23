@@ -62,7 +62,7 @@
                                 <a
                                   href="/datenschutz"
                                   target="_blank"
-                                  @click.stop
+                                  @click.prevent
                                 >Datenschutzerklärung</a>
                                  zu.
                               </div>
@@ -76,9 +76,9 @@
             </v-container>
         </v-form>
 
-        <v-sheet v-if="success">
-            <p>Ihre Nachricht wurde erfolgreich versendet.</p>
-        </v-sheet>
+        <v-snackbar  v-model="success">
+            <p class="d-flex align-center justify-center pb-4">Ihre Nachricht wurde erfolgreich versendet.</p>
+        </v-snackbar>
         
     </v-container>
 </template>
@@ -93,7 +93,7 @@
     const tel = ref('')
     const message = ref('')
     const success = ref(null)
-
+    const checkbox = ref(false)
 
     // vue rules in form of array
     const textRules = [
@@ -109,6 +109,10 @@
         value => value === '' ||
                 /(\(?([\d \-\)\–\+\/\(]+){6,}\)?([ .\-–\/]?)([\d]+))/.test(value) ||
                 'Bitte gib eine gültige Telefonnummer ein (freiwillig).'
+    ]
+
+    const checkboxRules = [
+        value => value || 'Die E-Mail kann ohne die Zustimmung nicht versendet werden.'
     ]
 
     function onSubmit() {
