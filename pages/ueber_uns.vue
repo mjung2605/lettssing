@@ -1,7 +1,7 @@
 <template>
     <v-container class="pt-16">
 
-        <h1>Über uns</h1>
+        <h1 class="pt-8">Über uns</h1>
 
         <p class="pt-8">Im November 2024 wurde unser Frauenchor offiziell als eingetragener Verein gegründet. Doch unsere Geschichte begann schon im August 2022 als Projektchor. Was als lockere Musikinitiative startete, hat sich als Gruppe motivierter Sängerinnen entwickelt, die sich leidenschaftlich der Musik widmet. <br><br>
 

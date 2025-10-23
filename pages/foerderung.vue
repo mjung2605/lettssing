@@ -1,6 +1,6 @@
 <template>
     <v-container class="pt-16">
-        <h1>Förderung</h1>
+        <h1 class="pt-8">Förderung</h1>
         <p class="pt-8">Unser Frauenchor lebt von Gemeinschaft, Freude an der Musik... und von Menschen, die uns unterstützen. Wenn Ihr unsere Arbeit wertschätzt und den Chor auf seinem musikalischen Weg begleiten möchtet, freuen wir uns sehr über Eure Mithilfe.</p>
 
 

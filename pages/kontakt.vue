@@ -1,6 +1,6 @@
 <template>
     <v-container class="pt-16"> 
-        <h1>Kontakt</h1>
+        <h1 class="pt-8">Kontakt</h1>
         <p class="pt-8">Schreibe uns eine Nachricht!</p>
         <v-form class="pt-8" v-model="valid" @submit.prevent="onSubmit">
             <v-container class=" pr-0 pl-0">

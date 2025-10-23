@@ -1,6 +1,6 @@
 <template>
     <v-container class="pt-16  pb-16">
-        <h1>Impressum</h1>
+        <h1 class="pt-8">Impressum</h1>
         <p class="pt-8">Simone Steiner<br>
             Klosterweg 17<br>
             59302 Oelde-Lette
