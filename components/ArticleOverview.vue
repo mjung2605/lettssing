@@ -1,5 +1,5 @@
 <template>   
-    <v-container class=" pl-0 pr-0 pb-16">
+    <v-container class=" pl-0 pr-0 pb-16 pt-16">
         <v-row>
             <v-col v-for="post in posts"
             :key="post.id"

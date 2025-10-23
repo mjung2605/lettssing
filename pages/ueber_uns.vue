@@ -23,12 +23,8 @@ Unser Ziel ist es, nicht nur die Musik zu leben, sondern auch mit unseren Auftri
 
         <h2 class="pt-8">Vorstand</h2>
 
-        <ListLine />
+        <BoardList />
 
-
-        <h2 class="pt-8">Chronik</h2>
-
-        <HomeBlogColumn />
 
         
     </v-container>
