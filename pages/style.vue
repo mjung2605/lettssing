@@ -13,8 +13,8 @@
         </v-carousel>
 
         <v-container class="d-flex flex-column ga-4 pl-0 pr-0 pb-16 pt-16">
-            <p>Diese Seite dient dem <b>Ausprobieren verschiedener Styling-Optionen für die Webseite</b> (am Beispiel der Homepage). Auswählbar sind verschiedene Farben, Hinntergründe und Schriftarten. </p>
-            <p>Die verfügbaren Schriftarten sind nur eine Auswahl der Systemschriftarten. Systemschriftarten sind auf jedem Gerät schon vorinstalliert und sehr leicht zu implementieren. Weitere Schriftarten können aber leicht hinzugefügt werden, falls ihr eigene Favoriten habt. Systemschriftarten sind über die Einstellungen des eigenen Computers (Windows 11: Einstellungen -> Personalisieren -> Schriftarten) zu finden, externe Schriftarten zum Beispiel über <a href="https://fonts.google.com">https://fonts.google.com</a>.</p>
+            <p>Diese Seite dient dem <b>Ausprobieren verschiedener Styling-Optionen für die Webseite</b> (am Beispiel der Homepage). Auswählbar sind verschiedene Farben, Hintergründe und Schriftarten. </p>
+            <p>Die verfügbaren Schriftarten sind nur eine Auswahl der Systemschriftarten. Systemschriftarten sind auf jedem Gerät schon vorinstalliert und sehr leicht zu implementieren. Weitere Schriftarten können aber leicht hinzugefügt werden, falls ihr eigene Favoriten habt. Mehr Systemschriftarten sind über die Einstellungen des eigenen Computers (Windows 11: Einstellungen -> Personalisieren -> Schriftarten) zu finden, externe Schriftarten zum Beispiel über <a href="https://fonts.google.com">https://fonts.google.com</a>.</p>
             <p>Ein Tipp: Die Schriftart des Textes sollte vor allem gut lesbar (also eher schlicht) sein, da so ein Text tendenziell etwas kleiner ist. Die Überschriften können aber ruhig etwas ausgefallener aussehen! ;) </p>
             <p>Viel Spaß beim Ausprobieren!</p>
             <v-container class="pl-0 m-0">
@@ -34,7 +34,7 @@
                     </v-col>
                     <v-col cols="4">
                         <v-select v-model="textColorSelect" label="Text-Farbe"
-                            :items="['Schwarz', 'Weiß', 'Grau', 'Pink', 'Petrol']">
+                            :items="['Schwarz', 'Weiss', 'Grau', 'Pink', 'Petrol']">
                         </v-select>
 
                     </v-col>
