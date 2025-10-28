@@ -141,12 +141,3 @@
     }
 
 </script>
-
-<style>
-    a:visited {
-        color: #005e4b;
-    }
-    a{
-        color: #008066
-    }
-</style>

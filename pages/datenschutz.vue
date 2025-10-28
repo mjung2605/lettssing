@@ -39,13 +39,3 @@
     </v-container>
 </template>
 
-<style>
-    h2 {
-        padding-top: 32px;
-    }
-
-    h3, h4, p {
-        padding-top: 16px;
-    }
-
-</style>
