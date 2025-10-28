@@ -15,7 +15,7 @@
 <!-- GLOBAL STYLES -->
 <style>
     body {
-        font-family: 'Maiandra GD', sans-serif;
+        font-family: 'MaiandraGD', sans-serif;
     }
     main {
         background-color: #00617813;
