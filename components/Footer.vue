@@ -1,5 +1,5 @@
 <template>
-    <v-footer  color="surface-light" class="d-flex align-center justify-center ga-2 flex-wrap flex-grow-1 py-3">
+    <v-footer  color="white" class="d-flex align-center justify-center ga-2 flex-wrap flex-grow-1 py-3">
       <NavButton to="/impressum" label="Impressum"/>
       <NavButton to="/datenschutz" label="Datenschutz"/>
       <!--<NavButton to="/admin" label="Admin-Bereich"/>-->

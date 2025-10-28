@@ -1,5 +1,5 @@
 <template>
-    <v-container class="d-flex ga-8 pl-0 pr-0">
+    <v-container class="d-flex flex-column flex-md-row ga-md-8 pl-0 pr-0">
 
         <v-carousel hide-delimiters>
             <v-carousel-item src="/images/vorstand.jpeg" />
@@ -13,8 +13,8 @@
             <v-carousel-item src="/images/vorstand-2.jpg" />
         </v-carousel>            
                 
-        <v-container class="pa-0">
-            <p class="pb-4"> Von links nach rechts: </p>
+        <v-container class="pa-0 pb-16">
+            <p class="pb-md-4"> Von links nach rechts: </p>
             <p v-for="person in data"
                 :key="person.id">
     

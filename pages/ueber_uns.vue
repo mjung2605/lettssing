@@ -12,7 +12,7 @@ Unser Ziel ist es, nicht nur die Musik zu leben, sondern auch mit unseren Auftri
 
         <h2 class="pt-12">Chorleitung</h2>
 
-        <v-container class="d-flex ga-8 pl-0 pr-0">
+        <v-container class="d-flex flex-column flex-md-row ga-md-8 pl-0 pr-0">
             <v-img src="/images/placeholder.png" width="400px" max-width="400px"/>
             <p> Sandra ist das Herzstück von Letts Sing. Mit viel Leidenschaft und musikalischem
                 Feingefühl führt sie unseren Frauenchor zu immer neuen klanglichen Höhen. Seit

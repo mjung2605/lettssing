@@ -15,10 +15,12 @@
 <!-- GLOBAL STYLES -->
 <style>
     body {
-        background-color: #00617813;
         font-family: 'Maiandra GD', sans-serif;
     }
-    h2 {
+    main {
+        background-color: #00617813;
+    }
+    h1, h2 {
         padding-top: 32px;
         color: #e50051;
     }
