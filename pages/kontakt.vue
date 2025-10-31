@@ -76,7 +76,7 @@
             </v-container>
         </v-form>
 
-        <v-snackbar  v-model="success">
+        <v-snackbar v-model="success">
             <p class="d-flex align-center justify-center pb-4">Ihre Nachricht wurde erfolgreich versendet.</p>
         </v-snackbar>
         

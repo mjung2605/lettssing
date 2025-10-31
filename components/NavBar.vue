@@ -2,12 +2,12 @@
     <v-app-bar
         color="white"
         :elevation="1"
-        height="72"
+        height="100"
         class="px-4 md:px-16 py-4"
     >
         <v-app-bar-title>
             <a href="/">
-                <v-img src="/images/lettssing-logo.jpg" width="140" class="mx-md-4" />
+                <v-img src="/images/lettssing-logo.jpg" width="200 " class="mx-md-4" />
             </a>
         </v-app-bar-title>
 
@@ -32,6 +32,7 @@
 
     </v-app-bar>
 
+    <!-- öffnet sich bei mobile nav // außerhalb navbar, um clipping zu vermeiden -->
     <v-navigation-drawer
         v-model="drawer"
         temporary
@@ -53,7 +54,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 
 const drawer = ref(false)
 
@@ -66,7 +66,6 @@ const navItems = [
 </script>
 
 <style scoped>
-
     .v-navigation-drawer {
         transition: transform 0.25s ease-in-out;
     }

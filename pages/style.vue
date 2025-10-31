@@ -1,5 +1,7 @@
 <template>
 
+    <!-- TEMPORÄRE STYLING SEITE ZUM AUSPROBIEREN VERSCHIEDENER KOMBINATIONEN -->
+     
     <div class="p-0 m-0" :style="{backgroundColor: backgroundComputed}">
         <v-carousel hide-delimiters show-arrows="hover" height="430" cycle>
             <v-carousel-item src="/images/ls-1.jpeg" cover />
@@ -141,10 +143,8 @@
         MaiandraGD: "'Maiandra GD', sans-serif",
         Qilka: "'Qilka', sans-serif",
         TempusSansITC: "'Tempus Sans ITC', sans-serif"
-
     }
     const fontComputed = computed(() => fontMap[fontSelect.value] || "'Roboto', sans-serif")
-
     // if changeFontTogether false
     const hFontSelect = ref('Roboto')
     const hFontComputed = computed(() => fontMap[hFontSelect.value] || "'Roboto', sans-serif")
