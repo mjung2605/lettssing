@@ -28,10 +28,11 @@ Die Bilder werden in den Supabase Storage Buckets images und teasers gespeichert
 ## Struktur des Repos
 Die Code-Struktur orientiert sich an einem typischen Nuxt-Projekt mit Ordnern wie:
 - pages/: Alles in diesem Ordner befindliche rendert Nuxt automatisch als eigene Seite. Dies umfasst die oben beschriebenen Seiten sowie Impressum und Datenschutz.
-- components/: Hier finden sich die Einzelteile der Seiten. Auch wenn das Projekt nicht allzu groß ist und nicht jede Komponente oft wiederverwendet wird, wurde trotzdem auf diese Strukturierung gesetzt, um eine übersichtliche Code-Struktur zu gewährleisten.
+- components/: Hier finden sich die Einzelteile der Seiten. Auch wenn das Projekt nicht allzu groß ist und nicht jede Komponente oft wiederverwendet wird, wurde trotzdem auf diese Strukturierung gesetzt, um eine übersichtliche Code-Struktur zu gewährleisten. Besonders ermöglicht diese Struktur übersichtliche und möglichst kurze pages/-Files.
 - plugins/: Hier wird das komponentenbasierte Framework Vuetify ins Projekt eingebunden.
 - public/: Öffentlich verfügbare Daten wie statische Bilder (z.B. jene im Banner auf der Homepage), die Aufzählung der Vorstandsmitglieder oder das Favicon werden hier abgelegt, um im Code verwendbar zu sein.
 - server/api/: API-Routen, die mit den in Supabase hinterlegten Artikel-Daten über CRUD-Methoden interagieren. Möglich sind das Lesen aller Artikel sowie das Lesen, Erstellen, Bearbeiten oder Löschen eines bestimmten Artikels.
 
+Die README.md dient der Vorstellung des Projekts, der Webseite und allem, was an Planung und Konzeption dahinter steckt. 
 
-Die README.md dient der Vorstellung des Projekts, der Webseite und allem, was an Planung und Konzeption dahinter steckt.
+In den Issues werden noch zu erledigende Aufgaben organisiert. Diese gliedern sich in die Kategorien TODO (neue Features/Seiten), FIX (bugfix + kleinere Änderungen) und CLEANUP (Ordnung oder Restrukturierung des Codes).
