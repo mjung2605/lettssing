@@ -2,15 +2,15 @@
     <v-container class="d-flex flex-column flex-md-row ga-md-8 pl-0 pr-0">
 
         <v-carousel hide-delimiters>
-            <v-carousel-item src="/images/vorstand.jpeg" />
-            <v-carousel-item src="/images/katja.jpg" />
-            <v-carousel-item src="/images/hilde.jpg" />
-            <v-carousel-item src="/images/mone.jpg" />
-            <v-carousel-item src="/images/steffi.jpg" />
-            <v-carousel-item src="/images/gaby.jpg" />
-            <v-carousel-item src="/images/moni.jpg" />
-            <v-carousel-item src="/images/kristina.jpg" />
-            <v-carousel-item src="/images/vorstand-2.jpg" />
+            <v-carousel-item cover src="/images/vorstand.jpeg" />
+            <v-carousel-item cover src="/images/katja.png" />
+            <v-carousel-item cover src="/images/hilde.png" />
+            <v-carousel-item cover src="/images/mone.png" />
+            <v-carousel-item cover src="/images/steffi.png" />
+            <v-carousel-item cover src="/images/gaby.png" />
+            <v-carousel-item cover src="/images/moni.png" />
+            <v-carousel-item cover src="/images/kristina.png" />
+            <v-carousel-item cover src="/images/vorstand-2.jpg" />
         </v-carousel>            
                 
         <v-container class="pa-0 pb-16">
