@@ -5,7 +5,7 @@
             :key="post.id"
             cols="12" class="pb-8">
                 <v-sheet class="d-flex flex-column flex-md-row ga-md-4 justify-center pa-4" color="transparent">
-                    <v-img cover :src="post.teaser_img" aspect-ratio="1/1" width="400px"></v-img>
+                    <v-img cover :src="post.teaser_img" aspect-ratio="1/1" width="400px" alt="Bild von Veranstaltungs-Poster"></v-img>
                     <v-container class="d-flex flex-column ga-4 align-start pa-0 pa-md-4">
                         <h2>{{ post.title }}</h2>
                         <p> {{ post.text.length > 400 ? post.text.slice(0, 400) + "..." : post.text }} </p>

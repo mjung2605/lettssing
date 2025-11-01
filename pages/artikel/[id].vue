@@ -4,7 +4,7 @@
         <p>{{ post?.text }}</p>
         <v-carousel v-if="img_array!=null" class="pt-8 pb-16" hide-delimiters>
             <v-carousel-item v-for="(i, index) in img_array" :key="index">
-                <v-img cover :src="i"/>
+                <v-img cover alt="Foto von Veranstaltung" :src="i"/>
             </v-carousel-item>
         </v-carousel>
     </v-container>
@@ -29,7 +29,6 @@
     watch(post, (newPost) => {
         console.log('Post geladen:', newPost.img.value)
         img_array.value = newPost.img
-
     })
 
 </script>

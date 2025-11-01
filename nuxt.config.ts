@@ -1,7 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
+import { de } from "vuetify/locale";
+
 
 export default defineNuxtConfig({
+  // SEO
+  app: {
+    head: {
+      title: "Lett's Sing e.V.", 
+      htmlAttrs: {
+        lang: 'de',
+      },
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ],
+    }
+  },
   pages: true,
   compatibilityDate: '2024-11-01',
   devtools: {
