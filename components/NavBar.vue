@@ -6,9 +6,9 @@
         class="px-4 md:px-16 py-4"
     >
         <v-app-bar-title>
-            <a href="/">
+            <NuxtLink to="/">
                 <v-img src="/images/lettssing-logo.jpg" width="200 " class="mx-md-4" />
-            </a>
+            </NuxtLink>
         </v-app-bar-title>
 
         <!-- desktop nav -->
@@ -32,25 +32,28 @@
 
     </v-app-bar>
 
-    <!-- öffnet sich bei mobile nav // außerhalb navbar, um clipping zu vermeiden -->
-    <v-navigation-drawer
-        v-model="drawer"
-        temporary
-        location="right"
-        class="pt-4 d-md-none h-full pt-16" 
-    >
-        <v-list density="comfortable" nav>
-            <v-list-item
-                v-for="(item, i) in navItems"
-                :key="i"
-                :to="item.to"
-                link
-                @click="drawer = false"
-            >
-                <v-list-item-title class="pa-8" style="font-size: large, ; font-weight: bold;">{{ item.label }}</v-list-item-title>
-            </v-list-item>
-        </v-list>
-    </v-navigation-drawer>    
+    <ClientOnly> <!-- Client Only um Hydration Mismatch durch Breakpoints zu vermeiden: Screen mit echten breakpoints erst auf client gerendert -->
+        <!-- öffnet sich bei mobile nav // außerhalb navbar, um clipping zu vermeiden -->
+        <v-navigation-drawer
+            v-model="drawer"
+            temporary
+            location="right"
+            class="pt-4 d-md-none h-full pt-16" 
+        >
+            <v-list density="comfortable" nav>
+                <v-list-item
+                    v-for="(item, i) in navItems"
+                    :key="i"
+                    :to="item.to"
+                    link
+                    @click="drawer = false"
+                >
+                    <v-list-item-title class="pa-8" style="font-size: large; font-weight: bold;">{{ item.label }}</v-list-item-title>
+                </v-list-item>
+            </v-list>
+        </v-navigation-drawer>    
+    </ClientOnly>
+
 </template>
 
 <script setup>
