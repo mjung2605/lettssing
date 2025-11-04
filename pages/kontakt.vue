@@ -62,7 +62,6 @@
                                 <a
                                   href="/datenschutz"
                                   target="_blank"
-                                  @click.prevent
                                 >Datenschutzerklärung</a>
                                  zu.
                               </div>
