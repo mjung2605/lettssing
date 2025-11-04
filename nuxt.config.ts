@@ -1,10 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-
-import { de } from "vuetify/locale";
-
-
 export default defineNuxtConfig({
   // SEO
+  ssr: true,
   app: {
     head: {
       title: "Lett's Sing e.V.", 
