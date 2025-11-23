@@ -10,7 +10,7 @@
                         <v-container class="d-flex flex-column ga-4 align-start pa-0 pa-md-4">
                             <h2>{{ post.title }}</h2>
                             <p> {{ post.text.length > 400 ? post.text.slice(0, 400) + "..." : post.text }} </p>
-                            <Button text="Mehr Lesen" :to="`/artikel/${post.id}`" />
+                            <Button v-if="post.img" text="Mehr Lesen" :to="`/artikel/${post.id}`" />
                         </v-container>
                         
                     </v-sheet>
@@ -26,14 +26,15 @@
     .article-teaser-img {
         max-width: 400px;
         width: 100%;
-        height: auto;
-        aspect-ratio: 1 / 1;
+        height: 100%;
+        object-fit: contain;
     }
 
 </style>
 
 <script setup>
 
-    const { data: posts } = await useFetch('/api/posts');
+    const { data: posts } = await useFetch('/api/posts'); // id, created_at, title, text, teaser_img, img[]
+    console.log(posts[13]);
 
 </script>
