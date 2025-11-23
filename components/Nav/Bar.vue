@@ -32,7 +32,7 @@
 
     </v-app-bar>
 
-    <ClientOnly> <!-- Client Only um Hydration Mismatch durch Breakpoints zu vermeiden: Screen mit echten breakpoints erst auf client gerendert -->
+    <ClientOnly> <!-- Client Only um Hydration Mismatch durch Breakpoints zu vermeiden: Screen mit echten breakpoints erst auf client gerendert, weil server assumed einf irgendwas -->
         <!-- öffnet sich bei mobile nav // außerhalb navbar, um clipping zu vermeiden -->
         <v-navigation-drawer
             v-model="drawer"
