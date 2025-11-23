@@ -9,7 +9,7 @@
 
             Unser Ziel ist es, nicht nur die Musik zu leben, sondern auch mit unseren Auftritten einen positiven Beitrag zur lokalen Kultur zu leisten. Wir freuen uns darauf, mit neuen Projekten und Konzerten die Begeisterung für Musik weiterzugeben.<br><br>
 
-            Schaut auch gerne bei unseren befreundeten Chors vorbei:
+            Schaut auch gerne bei unseren befreundeten Chören vorbei:
         </p>
 
 
@@ -20,12 +20,13 @@
 
         <h2 class="pt-12">Chorleitung</h2>
 
-        <AboutLeader />
+        <v-lazy><AboutLeader /></v-lazy>
+        
 
 
         <h2 class="pt-8">Vorstand</h2>
 
-        <AboutBoard />
+        <v-lazy><AboutBoard /></v-lazy>
 
 
         

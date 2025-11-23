@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'MaiandraGD';
-  src: url('~/assets/fonts/MaiandraGDRegular.ttf') format('truetype');
+  src: url('/fonts/MaiandraGDRegular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }

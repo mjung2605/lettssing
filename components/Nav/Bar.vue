@@ -7,7 +7,7 @@
     >
         <v-app-bar-title>
             <NuxtLink to="/">
-                <v-img src="/images/lettssing-logo.jpg" width="200 " class="mx-md-4" />
+                <v-img src="/images/webp/lettssing-logo.webp" alt="Letts-Sing-Logo" width="200" height="auto" class="mx-md-4 object-contain" />
             </NuxtLink>
         </v-app-bar-title>
 
@@ -38,7 +38,7 @@
             v-model="drawer"
             temporary
             location="right"
-            class="pt-4 d-md-none h-full pt-16" 
+            class="pt-4 d-md-none h-full w-full pt-16" 
         >
             <v-list density="comfortable" nav>
                 <v-list-item

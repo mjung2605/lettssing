@@ -3,8 +3,6 @@ import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
 export default defineNuxtPlugin(nuxtApp => {
-  
-  // define theme for color management?
 
 
   const vuetify = createVuetify({
