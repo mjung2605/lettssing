@@ -1,3 +1,5 @@
+
+
 <template>
     <v-container class="pt-16">
 
@@ -13,8 +15,8 @@
         </p>
 
 
-        <a href="https://www.lyra-lette.de"><v-icon class="mr-2" icon="mdi-open-in-new"></v-icon>Lyra Lette-Webseite</a><br>
-        <a href="https://www.v8ices.de"><v-icon class="mr-2" icon="mdi-open-in-new"></v-icon>v8ices-Webseite</a>        
+        <a class="d-flex" href="https://www.lyra-lette.de"><svg-icon :path="mdiOpenInNew" width="24" height="24" class="mr-2" viewBox="0 0 24 24" />Lyra Lette-Webseite</a><br>
+        <a class="d-flex" href="https://www.v8ices.de"><svg-icon :path="mdiOpenInNew" width="24" height="24" class="mr-2" viewBox="0 0 24 24" />v8ices-Webseite</a>        
 
 
 
@@ -32,4 +34,11 @@
         
     </v-container>
 </template>
+
+<script setup>
+    // svg icon renderer
+    import SvgIcon from '@jamescoyle/vue-icon';
+    // benötigte icons
+    import { mdiOpenInNew } from '@mdi/js'
+</script>
 

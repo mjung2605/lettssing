@@ -35,6 +35,6 @@
 <script setup>
 
     const { data: posts } = await useFetch('/api/posts'); // id, created_at, title, text, teaser_img, img[]
-    console.log(posts[13]);
+
 
 </script>

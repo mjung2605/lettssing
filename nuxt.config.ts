@@ -24,7 +24,6 @@ export default defineNuxtConfig({
   },
   css: [
     'vuetify/styles',
-    '@mdi/font/css/materialdesignicons.css',
     '~/assets/css/fonts.css', 
     '~/assets/css/global.css'
   ],
@@ -44,11 +43,5 @@ export default defineNuxtConfig({
   components: true,
   build: {
     transpile: ['vuetify'],
-  },
-  modules: [
-    '@nuxt/fonts',
-    '@nuxt/icon',
-    '@nuxt/image',
-    '@nuxt/eslint'
-  ]
+  }
 })
