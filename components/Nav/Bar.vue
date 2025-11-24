@@ -22,12 +22,11 @@
 
             <!-- mobile nav -->
             <v-btn
-                icon="mdi-menu"
-                variant="text"
+                variant="plain"
                 color="primary"
                 class="d-md-none"
                 @click="drawer = true"
-            />
+            ><svg-icon :path="mdiMenu" width="24" height="24" viewBox="0 0 24 24" /></v-btn>
         </template>
 
     </v-app-bar>
@@ -47,6 +46,7 @@
                     :to="item.to"
                     link
                     @click="drawer = false"
+                    :aria-label="`Link zu ${item.label}`"
                 >
                     <v-list-item-title class="pa-8" style="font-size: large; font-weight: bold;">{{ item.label }}</v-list-item-title>
                 </v-list-item>
@@ -57,16 +57,21 @@
 </template>
 
 <script setup>
+    // svg icon renderer
+    import SvgIcon from '@jamescoyle/vue-icon';
+    // benötigte icons
+    import { mdiMenu } from '@mdi/js'
 
-const drawer = ref(false)
+    const drawer = ref(false)
 
-const navItems = [
-  { label: 'Home', to: '/' },
-  { label: 'Über uns', to: '/ueber_uns' },
-  { label: 'Förderung', to: '/foerderung' },
-  { label: 'Kontakt', to: '/kontakt' },
-]
+    const navItems = [
+      { label: 'Home', to: '/' },
+      { label: 'Über uns', to: '/ueber_uns' },
+      { label: 'Förderung', to: '/foerderung' },
+      { label: 'Kontakt', to: '/kontakt' },
+    ]
 </script>
+
 
 <style scoped>
     .v-navigation-drawer {
