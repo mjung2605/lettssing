@@ -22,31 +22,30 @@
                 <NavButton to="/kontakt" label="Kontakt" />
                 
                 <!-- Social Media -->
-                <v-btn
+                <Button
                     href="https://www.instagram.com/letts_sing"
                     target="_blank"
                     variant="plain"
-                    color="primary" class="font-weight-bold" style="font-size: large;">
+                    class="font-weight-bold" style="font-size: large;">
                     <svg-icon :path="mdiInstagram" width="24" height="24" class="mr-2" viewBox="0 0 24 24" />
                     Instagram
-                </v-btn>
-                <v-btn
+                </Button>
+                <Button
                     href="https://www.youtube.com/channel/UCOABxYdq-XZAmkVqPe_DXYQ"
                     target="_blank"
                     variant="plain"
-                    color="primary" class="font-weight-bold" style="font-size: large;">
+                    class="font-weight-bold" style="font-size: large;">
                     <svg-icon :path="mdiYoutube" width="24" height="24" class="mr-2" viewBox="0 0 24 24" />
                     Youtube
-                </v-btn>
+                </Button>
             </div>
 
             <!-- mobile nav -->
-            <v-btn
+            <Button
                 variant="plain"
-                color="primary"
                 class="d-md-none"
                 @click="drawer = !drawer"
-            ><svg-icon :path="mdiMenu" width="24" height="24" viewBox="0 0 24 24" /></v-btn>
+            ><svg-icon :path="mdiMenu" width="24" height="24" viewBox="0 0 24 24" /></Button>
         </template>
 
     </v-app-bar>
@@ -80,8 +79,8 @@
                     @click="drawer = false"
                     :aria-label="`Link zu ${item.label}`"
                 >
-                    <v-list-item-title class="pa-8" style="font-size: large; font-weight: bold;">{{ item.label }}</v-list-item-title>
                     <svg-icon :path="item.path" width="24" height="24" class="mr-2" viewBox="0 0 24 24" />
+                    <v-list-item-title class="pa-8" style="font-size: large; font-weight: bold;">{{ item.label }}</v-list-item-title>
                 </v-list-item>
             </v-list>
         </v-navigation-drawer>    
