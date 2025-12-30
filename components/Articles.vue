@@ -9,7 +9,7 @@
                         <v-img cover :src="post.teaser_img" class="article-teaser-img" alt="Bild von Veranstaltungs-Poster"></v-img>
                         <v-container class="d-flex flex-column ga-4 align-start pa-0 pa-md-4">
                             <h2>{{ post.title }}</h2>
-                            <p> {{ post.text.length > 400 ? post.text.slice(0, 400) + "..." : post.text }} </p>
+                            <p> {{ post.text.length > 700 ? post.text.slice(0, 700) + "..." : post.text }} </p>
                             <Button v-if="post.img" text="Mehr Lesen" :to="`/artikel/${post.id}`" />
                         </v-container>
                         
