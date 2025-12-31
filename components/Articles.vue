@@ -10,7 +10,7 @@
                         <v-container class="d-flex flex-column ga-4 align-start pa-0 pa-md-4">
                             <h2>{{ post.title }}</h2>
                             <p> {{ post.text.length > 700 ? post.text.slice(0, 700) + "..." : post.text }} </p>
-                            <Button v-if="post.img" text="Mehr Lesen" :to="`/artikel/${post.id}`" />
+                            <Button v-if="post.img" text="Mehr Lesen" variant="tonal" :to="`/artikel/${post.id}`" />
                         </v-container>
                         
                     </v-sheet>
