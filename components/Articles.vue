@@ -1,5 +1,18 @@
 <template>   
     <v-container class="pl-0 pr-0 pb-16 pt-16">
+
+
+        <!-- Temp/Hard Code/TODO: Auslagern in eigene Komponente -->
+        
+        <v-row class="mb-8">
+            <v-col cols="12" class="pa-8">
+                <h2>Termine 2026</h2>
+                <p><b>Sonntag, 31.05.2026, 9:30 Uhr:</b> Begleitung beim Gottesdienst mit dem Chor "Badeperlen" in der St. Vitus Kirche,  Oelde-Lette.</p>
+                <p><b>Samstag, 27.06.2026, 16:30 Uhr:</b> Konzert mit "Badeperlen" in der Konzerthalle in Bad Salzuflen, Parkstraße 20.</p>
+                <p><b>Samstag, 04.07.2026:</b> Begleitung beim Jubiläumsfest Spielmannszug "Frei Weg" Lette im Heimathaus, Oelde-Lette. Uhrzeit wird noch bekannt gegeben.</p>
+            </v-col>
+        </v-row>
+
         <v-row>
             <v-col v-for="post in posts"
             :key="post.id"
