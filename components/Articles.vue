@@ -8,7 +8,7 @@
             <v-col cols="12" class="pa-8">
                 <h2>Termine 2026</h2>
                 <p><b>Sonntag, 31.05.2026, 9:30 Uhr:</b> Begleitung beim Gottesdienst mit dem Chor "Badeperlen" in der St. Vitus Kirche,  Oelde-Lette.</p>
-                <p><b>Samstag, 27.06.2026, 16:30 Uhr:</b> Konzert mit "Badeperlen" in der Konzerthalle in Bad Salzuflen, Parkstraße 20.</p>
+                <p style="color: red"><b>Fällt aus! <s>Samstag, 27.06.2026, 16:30 Uhr: </s></b><s>Konzert mit "Badeperlen" in der Konzerthalle in Bad Salzuflen, Parkstraße 20.</s></p>
                 <p><b>Samstag, 04.07.2026, 19:00 Uhr:</b> Musikalischer Sommerabend Spielmannszug "Frei Weg" Lette im Heimathaus, Beelener Str. 5, Oelde-Lette.</p>
             </v-col>
         </v-row>
