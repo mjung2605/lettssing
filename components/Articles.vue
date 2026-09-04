@@ -3,7 +3,7 @@
 
 
         <!-- Temp/Hard Code/TODO: Auslagern in eigene Komponente -->
-        
+    <!--s
         <v-row class="mb-8">
             <v-col cols="12" class="pa-8">
                 <h2>Termine 2026</h2>
@@ -12,6 +12,8 @@
                 <p><b>Samstag, 04.07.2026, 19:00 Uhr:</b> Musikalischer Sommerabend Spielmannszug "Frei Weg" Lette im Heimathaus, Beelener Str. 5, Oelde-Lette.</p>
             </v-col>
         </v-row>
+
+    -->
 
         <v-row>
             <v-col v-for="post in posts"
@@ -22,11 +24,13 @@
                         <v-img cover :src="post.teaser_img" class="article-teaser-img" alt="Bild von Veranstaltungs-Poster"></v-img>
                         <v-container class="d-flex flex-column ga-4 align-start pa-0 pa-md-4">
                             <h2>{{ post.title }}</h2>
-                            <p> {{ post.text.length > 700 ? post.text.slice(0, 700) + "..." : post.text }} </p>
+                            <p v-html="post.text.length > 700 ? post.text.slice(0, 700) + '...' : post.text" > </p>
+                            <v-img v-if="post.teaser_right" :src="post.teaser_right" class="article-teaser-right" alt="Link zu Ticketverkauf"></v-img>
                             <Button v-if="post.img" text="Mehr Lesen" variant="tonal" :to="`/artikel/${post.id}`" />
                         </v-container>
                         
                     </v-sheet>
+                    
                 </v-lazy>
             </v-col>
         </v-row>
@@ -42,6 +46,13 @@
         height: 100%;
         object-fit: contain;
     }
+    .article-teaser-right {
+        max-width: 200px;
+        width: 100%;
+
+        object-fit: contain;
+    }
+
 
 </style>
 

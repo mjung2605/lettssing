@@ -9,7 +9,7 @@ export default defineEventHandler(async (e) => {
     const id = e.context.params?.id;
 
     // extrahiert error von response, falls vorhanden, returnt sonst nichts
-    const { data, error } = await supabase.from('posts').select('*').eq("id", Number(id)); // id, created_at, title, text, teaser_img, img[]
+    const { data, error } = await supabase.from('posts').select('*').eq("id", Number(id)); // id, created_at, title, text, teaser_img, img[], teaser_right
     if(error) {
         console.error('Das Getten des einzelnen Artikels hat in der Server Route nicht funktioniert: ', error);
     } else return data[0]; // nur data gibt array mit einem objekt zurück, desw [0]

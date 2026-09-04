@@ -8,7 +8,8 @@ export default defineEventHandler(async () => {
 
 
     // extrahiert error von response, falls vorhanden, und data
-    const { data, error } = await supabase.from('posts').select('*').order("created_at", { ascending: false });
+    // vllt ohne img[] - lädt schnelleR? oder cached?
+    const { data, error } = await supabase.from('posts').select('*').order("created_at", { ascending: false }); // id, created_at, title, text, teaser_img, img[], teaser_right
     if(error) {
         console.error('Das Getten hat in der Server Route nicht funktioniert: ', error);
     }
